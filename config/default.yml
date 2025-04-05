@@ -1,0 +1,20 @@
+project:
+  name: LlmTranslator
+  version: 0.1.0
+
+controller:
+  source_language: 英文
+  target_language: 中文
+
+model:
+  model_name: qwen2.5:latest
+  base_url: http://localhost:11434
+
+reader:
+  file_path: demo/小王子_英文版.txt
+  min_length: 1000
+  max_length: 3000
+
+write:
+  file_path: demo/小王子_中文版111.txt
+
